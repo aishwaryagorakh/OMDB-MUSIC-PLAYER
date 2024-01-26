@@ -71,7 +71,7 @@ function loadMovieDetails(){
 function displayMovieDetails(details){
 
     // Making the output html by string interpolition
-    
+
     resultGrid.innerHTML = `
     <div class = "movie-poster">
         <img src = "${(details.Poster != "N/A") ? details.Poster : "image_not_found.png"}" alt = "movie poster">
@@ -148,7 +148,7 @@ function loadFavorites() {
 function addToFavoritesContainer(container, movieDetails) {
     const favItem = document.createElement('div');
     favItem.classList.add('fav-item');
-
+// Making the output html by string interpolition
     favItem.innerHTML = `
         <div class="fav-movie-poster">
             <img src="${movieDetails.Poster}" alt="movie poster">
