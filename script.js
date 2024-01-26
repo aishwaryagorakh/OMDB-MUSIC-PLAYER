@@ -5,7 +5,7 @@ const movieSearchBox = document.getElementById('movie-search-box');
 const searchList = document.getElementById('search-list');
 const resultGrid = document.getElementById('result-grid');
 
-
+// check the contain in input
 
 function findMovies(){
     let searchTerm = (movieSearchBox.value).trim();
@@ -18,6 +18,8 @@ function findMovies(){
 }
 
 // load movies from API
+
+
 async function loadMoviesFromAPI(searchTerm){
     const URL = `https://omdbapi.com/?s=${searchTerm}&page=1&apikey=744e8782`;
     const res = await fetch(`${URL}`);
