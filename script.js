@@ -41,6 +41,8 @@ function displayMovieListTOSearch(movies){
         else 
             moviePoster = "image_not_found.png";
 
+  // Making the output html by string interpolition
+  
         movieListItem.innerHTML = `
         <div class = "search-item-thumbnail">
             <img src = "${moviePoster}">

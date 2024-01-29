@@ -10,10 +10,12 @@
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
 }
+
+
 body{
     font-family: 'Inter', sans-serif;
 }
-
+ 
 a{
     text-decoration: none;
 }
@@ -21,6 +23,9 @@ img{
     width: 100%;
     display: block;
 }
+
+/* wrapper class */
+
 .wrapper{
     min-height: 100vh;
     background-color: var(--dark-color);
@@ -43,6 +48,8 @@ img{
         -ms-flex-pack: center;
             justify-content: center;
 }
+/* logo */
+
 .logo{
     padding: 1rem 0;
     border-bottom: 1px solid var(--light-dark-color);
