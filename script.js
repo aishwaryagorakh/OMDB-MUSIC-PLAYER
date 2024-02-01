@@ -38,8 +38,8 @@ function displayMovieListTOSearch(movies){
         movieListItem.classList.add('search-list-item');
         if(movies[idx].Poster != "N/A")
             moviePoster = movies[idx].Poster;
-        else 
-            moviePoster = "image_not_found.png";
+        // else 
+        //     moviePoster = "image_not_found.png";
 
   // Making the output html by string interpolition
   
@@ -140,7 +140,7 @@ function loadFavorites() {
     const favorites = JSON.parse(localStorage.getItem('favorites')) || [];
 
     // Clear the existing content in the container
-    favContainer.innerHTML = '';
+     favContainer.innerHTML = '';
 
     // Loop through favorites and display them
     favorites.forEach(movieDetails => {
